@@ -120,7 +120,10 @@ img{
       text-align: center;
    }
 }
-
+/* Footer */
+.footer .social a {
+   margin: 0 10px;
+ }
 /* 
 .flex-container{
     /* height: 400px;     */
