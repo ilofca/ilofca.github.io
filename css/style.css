@@ -123,7 +123,7 @@ img{
 /* Footer */
 .footer .social a {
    margin: 0 10px;
-   justify-self: flex-end;
+   justify-content: end;
  }
 /* 
 .flex-container{
