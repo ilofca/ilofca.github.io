@@ -143,8 +143,8 @@ ul{
    transform: skew(-1deg);
    transition: all .5s;
 }
-.box img{
-   display: flex; 
+.box table img{
+   /* display: flex;  */
    max-width: 90%    
 }
 /* Styling boxes in section - Main Content */
