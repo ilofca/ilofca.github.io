@@ -119,14 +119,13 @@ ul{
    
 }
 .box{
-   /* width: 8vw;
-   height: 8vh; */
+   
    min-width: 7vw;
    margin-top: 4vh;
    padding-left: 3vw;
    padding-right: 3vw;
-   transform: translateZ(0) skew(5deg);
-   display: flex;
+   transform: translateZ(0) skew(2deg);
+   
    text-align: center;
    align-items: center;
    justify-content: center;
