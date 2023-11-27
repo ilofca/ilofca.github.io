@@ -187,7 +187,7 @@ display: inline-block;
 /* Styling Footer */
 
 .footer .socialMedia a{
-   margin:0 3px;
+   margin:0 1px;
    justify-content: end;
 }
 .footer{   
