@@ -14,7 +14,7 @@ body{
    line-height: 1,5;
    color: #333;
    background: #b7cff9;
- 
+   
 }
 
 img{
@@ -51,9 +51,9 @@ ul{
    padding-right: 20px;
 }
 
-.navbarlogo img{
+/* .navbarlogo img{
    width: 35%;
-}
+} */
 
 .navbarlogo{
    font-size: x-large;
