@@ -18,8 +18,7 @@ body{
 }
 
 img{
-   max-width: 230px;
-   
+   max-width: 230px;   
 }
 
 
@@ -183,11 +182,8 @@ display: inline-block;
       display: block;
       text-align: center;
    }
-   /* .footer .socialMedia{
-      size-adjust: 50%;
-   } */
 }
-
+  
 /* Styling Footer */
 
 .footer .socialMedia a{
@@ -202,10 +198,7 @@ display: inline-block;
    bottom: 0;
    width: 100%;
 }
-/* .footer .logo{
-   font-size: x-large;
-   font-weight: bold;
-} */
+
 .footer a{
    color: #fff;
    text-decoration: none;
