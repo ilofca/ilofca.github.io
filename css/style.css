@@ -14,12 +14,14 @@ body{
    line-height: 1,5;
    color: #333;
    background: #b7cff9;
+ 
 }
 
 img{
    max-width: 230px;
-   margin-left: 5%;
+   
 }
+
 
 h1, h2{
    margin-bottom: 15px;
@@ -30,7 +32,7 @@ ul{
 }
 
 .container{
-   max-width: 1100px;
+   max-width: 100%;
    margin: 0 auto;
    padding: 0 30px;
 }
@@ -45,9 +47,15 @@ ul{
    background: #3474e6;
    color: #fff;
    height: 60px;
+   padding-top: 5px;
+   padding-right: 20px;
 }
 
-.navbar .logo{
+.navbarlogo img{
+   width: 35%;
+}
+
+.navbarlogo{
    font-size: x-large;
    font-weight: bold;
 }
@@ -73,24 +81,26 @@ ul{
    align-items: center;
    height: 100%;
 }
+/*
+.navbar ul li{
+    list-style: none;
+    display: inline-block;
+   margin: 0 20px;
+}
 
+.navbar ul li a{
+   color: #fff; 
+   text-decoration: none;
+}
+ */
 .navbar ul{
    display: flex;
 }
 
 .navbar ul li{
    margin-left: 30px;
+display: inline-block;
 }
-/* Styling nav buttons */
-.header img{
-   font-size: 1rem;
-   margin: 10;
-   line-height: 1;
-   color: var(--pearl);
-   transform: skew(-10deg);
-   transition: all 0.25s;
-}
-
 
 /* Styling Header */
 
@@ -98,42 +108,33 @@ ul{
    color: #fff;
    /* background-color: #0f2044; This is official UNCG color, we commented this to see gradiant background-color: ; */
    background-image: linear-gradient(to right, #0f2044, #275bcd);
-   min-height: 200px;
+   
 }
+.header img{
+   transform: skew(-5deg);
+   transition: all 0.25s;
+   max-width: 10%;
+   margin-right: 20px;
+   margin-left: 20px;
+ }
 
 .header h1{
    font-size: 2em;
    font-weight: bold;
    line-height: 1;
    color: #ffb71b;
+   margin-left: 20px;
 }
-
-.header img{
-   min-width: 230px;
+.header p {
+   margin-left: 20px;
 }
 
 .header .container{
    display: flex;
    align-items: center;
-   justify-content: space-between;
+   justify-content: space-between;   
    
 }
-.box{
-   
-   min-width: 7vw;
-   margin-top: 4vh;
-   padding-left: 3vw;
-   padding-right: 3vw;
-   /* transform: translateZ(0) skew(2deg); */
-   
-   text-align: center;
-   align-items: center;
-   justify-content: center;
-   background-color: var(--amethyst);
-   border-radius: var(--radius);
-   /* transition: width 0.2s, height 0.2s, margin-top 0.2s; */
-}
-
 
 .box{
    font-size: 1.1rem;
@@ -150,7 +151,7 @@ ul{
 /* Styling boxes in section - Main Content */
 
 .boxes .container{
-   max-width: 1400px;
+   max-width: 100%;
    display: flex;
    justify-content: space-between;
 }
@@ -172,6 +173,7 @@ ul{
 }
 
 @media(max-width: 760px){
+  
    .header .container{
       flex-direction: column;
       padding-top: 20px;
@@ -181,6 +183,9 @@ ul{
       display: block;
       text-align: center;
    }
+   /* .footer .socialMedia{
+      size-adjust: 50%;
+   } */
 }
 
 /* Styling Footer */
@@ -189,10 +194,13 @@ ul{
    margin:0 3px;
    justify-content: end;
 }
-.footer{
+.footer{   
    background: #3474e6;
    color: #fff;
    height: 60px;
+   position: fixed;  /*This is to fix footre to the bottom of page without expanding the section boxes*/
+   bottom: 0;
+   width: 100%;
 }
 /* .footer .logo{
    font-size: x-large;
@@ -219,6 +227,26 @@ ul{
    size: .5px;
 }
 
+.box:nth-of-type(1){
+   order: 1;
+  flex-grow: 2;
+   flex-basis:600px;
+}
+.box:nth-of-type(2){
+   order: 2;
+  flex-grow: 2;
+   flex-basis:600px;
+}
+.box:nth-of-type(3){
+   order: 3;
+  flex-grow: 2;
+   flex-basis:600px;
+}
+.box:nth-of-type(4){
+    order: 4;
+  flex-grow: 1;
+    flex-basis: 400px;
+}
 
 /* Universal Rules */
 /* *{
@@ -390,25 +418,6 @@ img{
 
 
 /* If you want your boxes to be in different order easily use order property of :nth-of-type() property */
-.box:nth-of-type(1){
-   order: 1;
-  flex-grow: 2;
-   flex-basis:600px;
-}
-.box:nth-of-type(2){
-   order: 2;
-  flex-grow: 2;
-   flex-basis:600px;
-}
-.box:nth-of-type(3){
-   order: 3;
-  flex-grow: 2;
-   flex-basis:600px;
-}
-.box:nth-of-type(4){
-    order: 4;
-  flex-grow: 1;
-    flex-basis: 400px;
-}
+
        
 
